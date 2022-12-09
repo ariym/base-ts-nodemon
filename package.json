@@ -1,7 +1,7 @@
 {
-  "name": "node-ffmpeg",
+  "name": "ts-nodemon-base",
   "version": "1.0.0",
-  "description": "extract mp3 or wav from mp4 returned by url",
+  "description": "Boilerplate for typescript and nodemon.",
   "main": "index.js",
   "scripts": {
     "start": "echo RUNNING npm run dev && npm run dev",
@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "init": "echo INSTALLING AND THEN RUNNING IN DEV && npm i && npm run dev"
   },
-  "author": "",
+  "author": "Ari",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^4.9.3",
