@@ -1,21 +1,29 @@
 {
   "name": "base-ts-nodemon",
   "version": "1.0.0",
+  "author": "ariym",
   "description": "Boilerplate for typescript and nodemon.",
   "main": "index.js",
+
   "scripts": {
-    "start": "echo RUNNING npm run dev && npm run dev",
-    "dev": "NODE_ENV='development' nodemon --watch './**/*.ts' --exec 'ts-node' index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "init": "echo INSTALLING AND THEN RUNNING IN DEV && npm i && npm run dev"
+    "start": "npm run dev",
+    "dev": "NODE_ENV='development' nodemon"
   },
-  "author": "Ari",
-  "license": "ISC",
+  
   "devDependencies": {
     "@types/node": "^18.11.17",
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.3"
   },
-  "dependencies": {}
+  
+  "dependencies": {},
+
+  "nodemonConfig": {
+    "env": { "NODE_ENV": "development" },
+    "watch": ["./**/*.ts"],
+    "exec": "ts-node index.ts" ,
+    "ext": "js, json, ts, proto",
+    "delay": "500ms"
+  }
 }
