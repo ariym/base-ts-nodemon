@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "author": "ariym",
   "description": "Boilerplate for typescript and nodemon.",
-  "main": "index.js",
+  "main": "dist/index.js",
 
   "scripts": {
     "start": "npm run dev",
-    "dev": "NODE_ENV='development' nodemon"
+    "dev": "nodemon"
   },
   
   "devDependencies": {
